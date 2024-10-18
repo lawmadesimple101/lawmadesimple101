@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML, CSS, and JavaScript Example</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Introduction to Law</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <h1>Welcome to My Simple Web Page</h1>
-    <button id="myButton">Click Me!</button>
 
-    <script src="script.js"></script>
+    <!-- Video Lecture Section -->
+    <section id="lecture">
+        <h1>Video Lecture: Introduction to Law</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/E66pl7A24Cw?si=6Xw-WrdrMVaUy8Lr" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Introduction to Law</h2>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. What is the primary purpose of law in society?</p>
+                <input type="radio" name="q1" value="A"> A. To control individual freedoms<br>
+                <input type="radio" name="q1" value="B"> B. To maintain order and resolve disputes<br>
+                <input type="radio" name="q1" value="C"> C. To provide for economic growth<br>
+                <span class="feedback" id="feedback1"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. Which of the following is NOT a type of legal system?</p>
+                <input type="radio" name="q2" value="A"> A. Common Law<br>
+                <input type="radio" name="q2" value="B"> B. Customary Law<br>
+                <input type="radio" name="q2" value="C"> C. Economic Law<br>
+                <span class="feedback" id="feedback2"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. What is the primary characteristic of a Civil Law system?</p>
+                <input type="radio" name="q3" value="A"> A. Laws are created through legislative statutes<br>
+                <input type="radio" name="q3" value="B"> B. Laws evolve through judicial precedents<br>
+                <input type="radio" name="q3" value="C"> C. Laws are based on religious teachings<br>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>4. Which of the following is a key role of courts in a legal system?</p>
+                <input type="radio" name="q4" value="A"> A. To create new laws<br>
+                <input type="radio" name="q4" value="B"> B. To interpret and apply existing laws<br>
+                <input type="radio" name="q4" value="C"> C. To enforce government policies<br>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>5. What is a constitution in a legal system?</p>
+                <input type="radio" name="q5" value="A"> A. A set of customs followed by the government<br>
+                <input type="radio" name="q5" value="B"> B. The supreme law that outlines the structure of government<br>
+                <input type="radio" name="q5" value="C"> C. A collection of laws governing businesses<br>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+        <p><strong>Assignment Question:</strong></p>
+        <p>Explain the significance of law in society. Discuss the basic structure of legal systems and their role in maintaining social order.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto:lawcore101@gmail.com"> lawcore101@gmail.com </a></p>
+        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
+        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>PLEASE DONATE</h2>
+        <p>Account Number: 2032202001590</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
+        <p>Wave Mobile: 3709558</p>
+        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>
